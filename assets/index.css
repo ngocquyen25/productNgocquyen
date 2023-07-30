@@ -1,0 +1,37 @@
+@media screen and (max-width: 1024px) {
+    h1{
+        color: #00ffff;
+    }
+}
+/* mobile:<740px  */
+/* tablet:>=740px and width <1024px */
+/* pc:width>= 1024px */
+.mobile,
+.tablet,
+.pc{
+    margin: auto;
+    font-size: 100px;
+    color: #FFF;
+    display: none;
+}
+body{
+    background-color: #00ffff;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+@media only screen and (max-width: 46.1875em){
+    .mobile{
+        display: block;
+    }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .tablet{
+        display: block;
+    }
+}
+@media only screen and (min-width: 64em){
+    .pc{
+        display: block;
+    }
+}

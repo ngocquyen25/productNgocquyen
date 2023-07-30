@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "SanPham": [
+    {
+      "name": "Váy Buộc Dây Chéo Cổ Khóa Lưng, Đầm Nữ Chữ A Hàn Quốc",
+      "img": "https://down-vn.img.susercontent.com/file/360b4be695501be29659f3cdc35d63da_tn",
+      "OldPrice": "1.200.000",
+      "Price": "999.999",
+      "location": "Thành Phố Hồ Chí Minh",
+      "sale": "4",
+      "id": 1
+    }
+  ]
+}

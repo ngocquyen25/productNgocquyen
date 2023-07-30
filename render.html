@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./app.js" defer></script>
+    <title>Document</title>
+</head>
+<style>
+    .list-courses{
+        list-style: none;
+        padding-left: 0;
+    }
+    .list-courses li{
+        background-color: rgb(245, 122, 84);
+        padding: 8px 16px;
+    }
+    .body{
+        width: 40%;
+        margin: 0 auto;
+        background-color: rgb(236, 102, 102);
+    }
+    h2{
+        text-align: center;
+    }
+    .list-courses .button{
+        text-align: center;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    .list-btn{
+        text-align: center;
+        padding: 6px 0;
+        margin-bottom: 4px;
+    }
+    .input{
+        display: flex;
+        
+    }
+    .input input{
+        flex: 1;
+        padding: 6px;
+
+    }
+    .input input:last-child{
+        margin-top: 4px;
+    }
+    .input label{
+        flex: 0.5;
+    }
+    .btn1{
+        display: none;
+        margin: 0 auto;
+    }
+    .btn2{
+        display: none;
+        margin: 0 auto;
+    }
+    .input:first-child{
+        display: none;
+    }
+</style>
+<body>
+    <div class="body">
+        <div>
+            <h2>Danh sách khóa học</h2>
+            <ul class="list-courses">
+                <li></li>
+            </ul>
+        </div>
+        <div>
+            <div class="input inputfirst">
+                <label for="">ID</label>
+                <input class="list-input"  type="text" name="id" readonly>
+            </div>
+            <div class="input">
+                <label for="">Name</label>
+                <input class="list-input"  type="text" name="name">
+            </div>
+            <div class="input">
+                <label for="">description</label>
+                <input class="list-input" type="text" name="description">
+            </div>
+            <div class="list-btn">
+                <button class="btn">create</button>
+                <button class="btn1">Update</button>
+                <button class="btn2">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

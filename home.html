@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppe Design By Quyen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <script src="./main.js" defer></script>
+    <script src="./app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="app">
+        
+        </header>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row sm-gutter app-content">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">
+                            <h3 class="caterogy__heading"> Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="" class="caterogy-item__link">Trang điểm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="caterogy-item__link">Trang điểm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="caterogy-item__link">Trang điểm</a>
+                                </li>
+                            </ul>
+                            
+                        </nav>
+                    </div>
+                    
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__lable">Danh Mục Sản Phẩm</span>
+                            <button class="home-filter__btn btn btns-1">Update</button>
+                            <button class="home-filter__btn btn btn--primary btns-2">Cancel</button>
+                            <button class="home-filter__btn btn btns">Create</button>
+                        </div>
+
+                        <div class="list-input">
+                            <div class="select-input1 inputfirst">
+                                <label for="">ID</label>
+                                <input class="select-input__label " type="text" name="id" readonly>
+                            </div>
+                            <div class="select-input1">
+                                <label for="">Hình</label>
+                                <input class="select-input__label" type="text" name="img">
+                            </div>
+                            <div class="select-input1">
+                                <label for="">Name</label>
+                                
+                                <input class="select-input__label" type="text" name="name">
+                            </div>
+                            <div class="select-input1">
+                                <label for="">Gía cũ</label>
+                                
+                                <input class="select-input__label" type="text" name="OldPrice">
+                            </div>
+                            <div class="select-input1">
+                                <label for="">Gía mới</label>
+                                
+                                <input class="select-input__label" type="text" name="Price">
+                            </div>
+                            <div class="select-input1">
+                                <label for="">Địa chỉ</label>
+                                
+                                <input class="select-input__label" type="text" name="location">
+                            </div>
+
+                            <div class="select-input1">
+                                <label for="">Giam giá</label>
+                                <input value="0" class="select-input__label" type="text" name="sale">
+                            </div>
+                        </div>
+
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện lợi Dụng cụ và thiết bị tiện lợi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ v</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện lợi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện lợi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện lợi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện lợi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện lợi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện lợi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện lợi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện lợi</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện lợi</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="home-product">
+                                <div class="row sm-gutter row-js">
+                                    
+                                    
+                                </div>   
+                        </div>
+                        <ul class="pagination home-pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fa-solid fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link ">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fa-solid fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-12 c">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">F8-Shop Mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <h3 class="footer__heading">Theo dõi chúng tôi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class=" footer-item__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    
+                                    <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trang điểm mặt</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trang điểm môi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trang điểm mắt</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Makeup collection</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Dưỡng da</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Kem dưỡng ẩm</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__down">
+                            <img src="./assets/img/QR_code.png" alt="" class="footer__down-qr">
+                            <div class="footer__down-apps">
+                                <a href="" class="footer__down-apps-link">
+
+                                    <img src="./assets/img/ch_play.png" alt="" class="footer__down-apps-img">
+                                </a>
+                                <a href="" class="footer__down-apps-link">
+
+                                    <img src="./assets/img/apstore.png" alt="" class="footer__down-apps-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text">© 2023 Bản quyền thuộc về cá nhân Lê Ngọc Quyền</p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <div class="model">
+        <div class="model__body">
+                <div class="auth-form auth-form-dk">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng kí</h3>
+                            <span class="auth-form__switch auth-form__switch-js">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form" >
+                            <div class="auth-form__grouop">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__grouop">
+                                <input type="password" class="auth-form__input" placeholder="Password của bạn">
+                            </div>
+                            <div class="auth-form__grouop">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy">
+                                Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+                                <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form_controls">
+                            <button class="btn auth-form_controls-back btn--normal btn-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÍ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__social">
+                        <a href=""  class=" auth-form__social--facebook btn btn--size-s btn--with-icon">
+                            <i class="  auth-form__social-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__social-label">Kết nối với facebook</span>
+                        </a>
+                        <a href="" class=" auth-form__social--google btn btn--size-s btn--with-icon">
+                            <i class="  auth-form__social-icon fa-brands fa-google"></i>
+                            <span class="auth-form__social-label">Kết nối với gg</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="auth-form auth-form-js">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng Nhập</h3>
+                            <span class="auth-form__switch auth-form__switch-back-login">Đăng Kí</span>
+                        </div>
+                        <div class="auth-form__form" >
+                            <div class="auth-form__grouop">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__grouop">
+                                <input type="password" class="auth-form__input" placeholder="Password của bạn">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside auth-form__aside--nopd ">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__hepl-link auth-form__hepl-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__hepl-link">Cần trợ giúp?</a>
+                            </div>
+                        </div>
+                        <div class="auth-form_controls">
+                            <button class="btn-back-login btn auth-form_controls-back btn--normal ">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__social">
+                        <a href=""  class=" auth-form__social--facebook btn btn--size-s btn--with-icon">
+                            <i class="  auth-form__social-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__social-label">Kết nối với facebook</span>
+                        </a>
+                        <a href="" class=" auth-form__social--google btn btn--size-s btn--with-icon">
+                            <i class="  auth-form__social-icon fa-brands fa-google"></i>
+                            <span class="auth-form__social-label">Kết nối với gg</span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        <div class="model__overlay"></div>
+    </div>
+    
+    <!-- <script>
+        // const removes = document.querySelectorAll('.header__cart-item-remove');
+        // const items = document.querySelectorAll('.header__cart-item');
+        // const model = document.querySelector('.model');
+        // const back = document.querySelector('.btn-back');
+        // const backlogin = document.querySelector('.btn-back-login');
+        // const log = document.querySelector('.header__navbar-item--strong-login');
+        // const dk = document.querySelector('.header__navbar-item--strong-js');
+        // const login = document.querySelector('.auth-form__switch-js');
+        // const formlog = document.querySelector('.auth-form-js');
+        // const formdk = document.querySelector('.auth-form-dk');
+        // const backlog = document.querySelector('.auth-form__switch-back-login');
+        // const history = document.querySelector('.header__sarch-history');
+        // const hisitems = document.querySelectorAll('.header__search-history-item');
+        // const container = document.querySelector('.app__container');
+        // const hislinks = document.querySelectorAll('.history-link');
+        // var hisinput = document.querySelector('.header__search-input');
+        // var app = document.querySelector('.app');
+        
+        for(let i = 0;i< removes.length;i++){
+            removes[i].addEventListener('click',function(){
+                removeItem(i);
+            });
+        }
+        function removeItem(i){
+                items[i].style.display = 'none';
+        }
+        container.addEventListener('click',hidehis);
+        function hidehis(){
+            history.style.display = 'none';
+        }
+        
+        // for (var i = 0; i < hisitems.length; i++) {
+        //         (function(index) {
+        //             var hisitem = hisitems[index];
+        //             var hislink = hislinks[index]
+        //             hisitem.addEventListener('click', function(event) {
+        //             event.preventDefault();
+        //             hisinput.value = hislink.innerHTML;
+        //             history.style.display = 'none';
+        //         });
+        //             })
+        //             (i);
+        //     }
+            for (var i = 0; i < hisitems.length; i++) {
+                    (function (index) {
+                        var hisitem = hisitems[index];
+                        var hislink = hislinks[index]
+                        hisitem.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        hisinput.value = hislink.innerHTML;
+                        history.style.display = 'none';
+                    });
+                        })
+                        (i);
+                }
+
+
+        var element1 = document.querySelector('.header__search-input');
+        var element2 = document.querySelector('.header__sarch-history');
+        var isElement2Focused = false;
+
+        element1.addEventListener('focus', function() {
+        isElement1Focused = true;
+        element2.style.display = 'block';
+        });
+
+        element1.addEventListener('blur', function() {
+        isElement1Focused = true;
+        });
+
+        document.addEventListener('click', function(event) {
+        var target = event.target;
+        if (!element1.contains(target) && !isElement1Focused) {
+            element2.style.display = 'none';
+            
+        }
+        });
+
+        function showlog(){
+            model.classList.add('model-open');
+            formdk.style.display= 'none';
+            formlog.style.display = 'block';
+        }
+
+        function showBuyTickets(){
+            model.classList.add('model-open');
+            formdk.style.display= 'block';
+            formlog.style.display = 'none';
+        }
+
+        function hideBuyTickets(){
+            model.classList.remove('model-open')
+        }
+
+        function hideformlog(){
+            formlog.style.display = 'none';
+            formdk.style.display= 'block';
+        }
+        
+
+        dk.addEventListener('click',showBuyTickets);
+        back.addEventListener('click',hideBuyTickets);
+        log.addEventListener('click', showlog);
+        backlog.addEventListener('click', hideformlog);
+
+        function showLogin(){
+            formdk.style.display= 'none';
+            formlog.style.display = 'block';
+        }
+
+        backlogin.addEventListener('click',hideBuyTickets);
+        login.addEventListener('click',showLogin);
+    </script> -->
+    <!-- <script src="./main.js"></script> -->
+</body>
+</html>
